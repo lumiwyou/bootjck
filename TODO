@@ -1,0 +1,6 @@
+[ ] ISSUE: In main(), the header.numberofpartitionentries show incorrect amount value after gptheader read().
+        - Verified read() start address is correct since header.signature is correct value.
+        - Has to be some other field or there is a difference in versions.
+        - The data structure was not kosher with the UEFI tech spec.
+[ ] ISSUE: EFI_PARTITION_SIGNATURE is too small to contain the EFI system partition signature.
+[ ] ISSUE: In gptheader there is a reserved field at bottom which has dynamic size on runtime depending on block size.
